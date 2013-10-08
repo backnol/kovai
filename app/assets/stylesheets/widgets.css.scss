@@ -1,0 +1,42 @@
+#widget-container {
+  margin-top: 10px;
+  .col-lg-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .col-lg-12 {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  
+  .jumbotron {
+    color: white;
+    border-radius: 0;
+    margin-bottom: 10px;
+
+    &.twitter {
+      background-color: #12b0c5;
+      height:450px;
+      p {
+        font-weight: 400;
+        margin-bottom: 20px;
+        font-size: 17px;
+      }
+    }
+    
+    &.profile {
+      background-color: #ec663c;
+      height: 450px;
+    }
+    
+    &.instagram {
+      background-color: #9c4274;
+      height: 300px;
+    }
+    
+    h2 {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
