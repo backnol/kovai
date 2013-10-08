@@ -1,0 +1,27 @@
+#widget-container{
+  margin-top: 10px;
+  .jumbotron{
+    &.twitter{
+      background-color: #12b0c5;
+      height:450px;
+      p{
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+    }
+    
+    &.profile {
+      background-color: #ec663c;
+      height:450px;
+    }
+    
+    p {
+      color: white;
+    }
+    
+    h2 {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    border-radius: 0;
+  }
+}
