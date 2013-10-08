@@ -10,6 +10,6 @@ describe Tweet do
     should validate_uniqueness_of(:remote_id)
   end
 
-  it { should have_db_column(:created_at).of_type(:datetime) }
-  it { should validate_presence_of(:created_at) }
+  it { should have_db_column(:posted_at).of_type(:datetime) }
+  it { should validate_presence_of(:posted_at) }
 end

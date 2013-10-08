@@ -4,6 +4,6 @@ class Tweet < ActiveRecord::Base
             uniqueness: true
   validates :text,
             presence: true
-  validates :created_at,
+  validates :posted_at,
             presence: true
 end

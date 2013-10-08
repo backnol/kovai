@@ -14,8 +14,8 @@ namespace :social do
     tweets = client.user_timeline(twitter_key[:user_name])
     tweets.collect(&:attrs).each do |attrs|
       created_at = Time.parse(attrs[:created_at])
-      if last_tweet.nil? || created_at > last_tweet.created_at
-        ap Tweet.create!(remote_id: attrs[:id], text: attrs[:text], created_at: created_at)
+      if last_tweet.nil? || created_at > last_tweet.posted_at
+        ap Tweet.create!(remote_id: attrs[:id], text: attrs[:text], posted_at: created_at)
       end
     end
   end
