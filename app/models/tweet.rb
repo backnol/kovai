@@ -3,8 +3,7 @@ class Tweet < ActiveRecord::Base
             presence: true, 
             uniqueness: true
   validates :text,
-            presence: true,
-            length: { maximum: 140 }
-  validates :posted_at,
+            presence: true
+  validates :created_at,
             presence: true
 end

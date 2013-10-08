@@ -1,0 +1,7 @@
+# Copy this file to keys/social.yml and fill the keys for respective sites
+twitter:
+  consumer_key:	        
+  consumer_secret:	    
+  access_token:         
+  access_token_secret:
+  user_name:
