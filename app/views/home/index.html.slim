@@ -14,5 +14,9 @@
             | {{tweet.text}}
   .row
     .col-lg-12
-      .jumbotron.instagram
+      .jumbotron.instagram ng-controller="InstasController"
         h2 Instagram
+        .row
+          .col-md-2.col-sm-4.col-xs-6 ng-repeat="insta in instas"
+            .thumbnail
+              img ng-src="{{insta.image_url}}"

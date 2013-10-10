@@ -17,22 +17,30 @@
 
     &.twitter {
       background-color: #12b0c5;
-      height:450px;
+      @media (min-width: 1200px) {
+        height: 610px;
+      }
       p {
-        font-weight: 400;
         margin-bottom: 20px;
-        font-size: 17px;
       }
     }
     
     &.profile {
       background-color: #ec663c;
-      height: 450px;
+      @media (min-width: 1200px) {
+        height: 610px;
+      }
     }
     
     &.instagram {
       background-color: #9c4274;
-      height: 300px;
+      .thumbnail{
+        background-color: transparent;
+        border: none;
+        img {
+          border-radius: 10;
+        }
+      }
     }
     
     h2 {
