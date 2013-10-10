@@ -17,6 +17,9 @@
 
     &.twitter {
       background-color: #12b0c5;
+      @media (min-width: 1200px) {
+        height: 610px;
+      }
       p {
         margin-bottom: 20px;
       }
@@ -24,6 +27,9 @@
     
     &.profile {
       background-color: #ec663c;
+      @media (min-width: 1200px) {
+        height: 610px;
+      }
     }
     
     &.instagram {
