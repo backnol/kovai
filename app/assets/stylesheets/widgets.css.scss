@@ -28,6 +28,13 @@
     
     &.instagram {
       background-color: #9c4274;
+      .thumbnail{
+        background-color: transparent;
+        border: none;
+        img {
+          border-radius: 10;
+        }
+      }
     }
     
     h2 {
