@@ -18,7 +18,8 @@ From the project directory run the following commands
 
     $ bundle install
     $ rake db:setup
-    $ rake db:populate
+    $ rake social:get_instas
+    $ rake social:get_tweets
     $ rails s
 
 Then you can visit the site by pointing the browser url to localhost:3000
