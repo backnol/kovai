@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131012031821) do
+ActiveRecord::Schema.define(version: 20131021040506) do
 
   create_table "insta", force: true do |t|
     t.integer  "remote_id"
     t.string   "image_url"
     t.datetime "posted_at"
     t.text     "caption"
+    t.string   "link"
   end
 
   create_table "tweets", force: true do |t|

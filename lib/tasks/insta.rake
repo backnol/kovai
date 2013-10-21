@@ -15,6 +15,7 @@ namespace :social do
         caption = insta_json[:caption] ? insta_json[:caption][:text] : nil
         insta = Insta.create!(remote_id: insta_json[:id].split('_')[0].to_i,
                               image_url: insta_json[:images][:thumbnail][:url],
+                              link: insta_json[:link],
                               caption:   caption,
                               posted_at: created_time)
         ap insta

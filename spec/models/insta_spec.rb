@@ -15,4 +15,6 @@ describe Insta do
   it { should validate_presence_of(:posted_at) }
   
   it { should have_db_column(:caption).of_type(:text) }
+
+  it { should have_db_column(:link).of_type(:string) }
 end
