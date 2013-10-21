@@ -1,4 +1,4 @@
-#widget-container
+#widget-container ng-controller="WidgetsController"
   .row
     .col-lg-6
       .jumbotron.profile
@@ -7,14 +7,14 @@
         p I am cool and awesome. I got more things to say.
       
     .col-lg-6
-      .jumbotron.twitter ng-controller="TweetsController"
+      .jumbotron.twitter
         .container
           h2 Tweets
           p ng-repeat="tweet in tweets"
             | {{tweet.text}}
   .row
     .col-lg-12
-      .jumbotron.instagram ng-controller="InstasController"
+      .jumbotron.instagram
         h2 Instagram
         .row
           .col-md-2.col-sm-4.col-xs-6 ng-repeat="insta in instas"
