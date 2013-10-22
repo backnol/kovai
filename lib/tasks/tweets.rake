@@ -11,7 +11,7 @@ namespace :social do
       config.access_token_secret = twitter_key[:access_token_secret]
     end
     
-    tweets = client.user_timeline(twitter_key[:user_name])
+    tweets = client.home_timeline()
     tweets.collect(&:attrs).each do |attrs|
       created_at = Time.parse(attrs[:created_at])
       if last_tweet.nil? || created_at > last_tweet.posted_at

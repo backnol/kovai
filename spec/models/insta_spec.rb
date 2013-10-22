@@ -7,7 +7,7 @@ describe Insta do
   it { should have_db_column(:remote_id).of_type(:integer) }
   it { should validate_presence_of(:remote_id) }
   it 'remote_id should be unique' do
-    FactoryGirl.create(:insta)
+    create(:insta)
     should validate_uniqueness_of(:remote_id)
   end
       
@@ -15,4 +15,6 @@ describe Insta do
   it { should validate_presence_of(:posted_at) }
   
   it { should have_db_column(:caption).of_type(:text) }
+
+  it { should have_db_column(:link).of_type(:string) }
 end

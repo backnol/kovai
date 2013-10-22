@@ -10,5 +10,6 @@ FactoryGirl.define do
     remote_id { rand(9999999) }
     posted_at { Time.now }
     image_url 'http://image.url'
+    link 'http://instagr.am/p/BWrVZ/'
   end
 end
