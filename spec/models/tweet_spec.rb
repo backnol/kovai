@@ -6,7 +6,7 @@ describe Tweet do
   it { should have_db_column(:remote_id).of_type(:integer) }
   it { should validate_presence_of(:remote_id) }
   it 'validates uniqueness of remote_id' do
-    FactoryGirl.create(:tweet)
+    create(:tweet)
     should validate_uniqueness_of(:remote_id)
   end
 

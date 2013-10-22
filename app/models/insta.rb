@@ -7,7 +7,7 @@ class Insta < ActiveRecord::Base
   validates :posted_at,
             presence: true
   validates :caption,
-  			presence: true
+  			    presence: true
   validates :link,
-  			presence: true
+  			    presence: true
 end
