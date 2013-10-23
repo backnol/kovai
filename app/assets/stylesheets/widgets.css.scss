@@ -1,25 +1,10 @@
 #widget-container {
-  margin-top: 10px;
-  .col-lg-6 {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  
-  .col-lg-12 {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  
   .jumbotron {
     color: white;
     border-radius: 0;
-    margin-bottom: 10px;
 
     &.twitter {
       background-color: #12b0c5;
-      @media (min-width: 1200px) {
-        height: 610px;
-      }
       p {
         margin-bottom: 20px;
       }
@@ -27,9 +12,6 @@
     
     &.profile {
       background-color: #ec663c;
-      @media (min-width: 1200px) {
-        height: 610px;
-      }
     }
     
     &.instagram {
