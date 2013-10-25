@@ -8,7 +8,11 @@ kovaiApp.factory 'Insta', ['$resource', ($resource) ->
   $resource '/instas'
 ]
 
-kovaiApp.controller 'WidgetsController', ['$scope', 'Insta', 'Tweet', ($scope, Insta, Tweet) ->
+kovaiApp.controller 'HomeController', ['$scope', 'Insta', 'Tweet', ($scope, Insta, Tweet) ->
   $scope.instas = Insta.query()
   $scope.tweets = Tweet.query()
 ]
+
+kovaiApp.config(['$routeProvider', ($routeProvider) ->
+  $routeProvider.otherwise({ templateUrl: '../assets/home.html', controller: 'HomeController' } )
+])
