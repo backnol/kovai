@@ -1,0 +1,87 @@
+/* Global Styles */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+/* Full Page Image Header Area */
+
+.header {
+  color: rgba(255,255,255,0.8);
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(/assets/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  i.social-icon {
+    color: rgba(255, 255, 255, 0.7);
+    border: 3px solid rgba(255, 255, 255, 0.7);
+  }
+}
+
+i.social-icon {
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+i.social-icon:hover {
+  font-size: 68px;
+}
+
+/* Callout */
+
+.callout {
+  color: rgba(255, 255, 255, 0.7);
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(/assets/callout.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.tweets {
+  padding: 50px 0;
+  background: #7fbbda;
+  color: #ffffff;
+}
+
+.instas {
+  padding: 50px 0;
+  background: #517fa4;
+  color: #ffffff;
+}
+
+/* Footer */
+
+footer {
+  padding: 100px 0;
+}
