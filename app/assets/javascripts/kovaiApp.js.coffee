@@ -14,8 +14,7 @@ kovaiApp.controller 'HomeController', ['$scope', 'Insta', 'Tweet', '$anchorScrol
 
   # FIXME: Doesn't always work. It is sometimes offset
   $scope.scrollTo = (id) ->
-    $location.hash id
-    $anchorScroll()
+    $("html, body").animate({ scrollTop: $('#' + id).offset().top + 2 }, 1000);
 ]
 
 kovaiApp.config(['$routeProvider', ($routeProvider) ->
