@@ -27,7 +27,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(/assets/bg.jpg) no-repeat center center fixed; 
+  background: url(image_path('bg.jpg')) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -60,7 +60,7 @@ i.social-icon:hover {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(/assets/callout.jpg) no-repeat center center fixed; 
+  background: url(image_path('callout.jpg')) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
