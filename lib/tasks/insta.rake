@@ -13,7 +13,7 @@ namespace :social do
       created_time = Time.strptime(insta_json[:created_time], '%s')
       if last_insta.nil? || created_time > last_insta.posted_at
         caption = insta_json[:caption] ? insta_json[:caption][:text] : nil
-        insta = Insta.create!(remote_id: insta_json[:id].split('_')[0].to_i,
+        insta = Insta.create!(remote_id: insta_json[:id].split('_')[0],
                               image_url: insta_json[:images][:thumbnail][:url],
                               link: insta_json[:link],
                               caption:   caption,

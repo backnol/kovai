@@ -17,15 +17,17 @@ ActiveRecord::Schema.define(version: 20131022013306) do
   enable_extension "plpgsql"
 
   create_table "insta", force: true do |t|
-    t.integer  "remote_id"
+    t.string   "remote_id"
     t.string   "image_url"
     t.datetime "posted_at"
     t.text     "caption"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "link"
   end
 
   create_table "tweets", force: true do |t|
-    t.integer  "remote_id"
+    t.string   "remote_id"
     t.string   "text"
     t.datetime "posted_at"
     t.datetime "created_at"
