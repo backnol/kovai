@@ -50,6 +50,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :assets do
+  gem 'libv8', '~> 3.16.14.3'
+  gem 'therubyracer', '~> 0.12.0'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
