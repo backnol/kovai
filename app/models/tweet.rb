@@ -1,4 +1,6 @@
 class Tweet < ActiveRecord::Base
+  include SocialObject
+
   validates :remote_id,
             presence: true, 
             uniqueness: true

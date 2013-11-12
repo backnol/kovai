@@ -48,14 +48,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :assets do
+  gem 'libv8', '~> 3.16.14.3'
+  gem 'therubyracer', '~> 0.12.0'
+end
+
 group :production do
   gem 'unicorn'
   gem 'pg'
-end
-
-group :assets do
-  gem 'libv8'
-  gem 'therubyracer'
 end
 
 # Use ActiveModel has_secure_password
