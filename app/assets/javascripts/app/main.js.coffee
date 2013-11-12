@@ -1,0 +1,1 @@
+kovaiApp = angular.module('kovaiApp', ['ngResource', 'ngSanitize'])

@@ -15,3 +15,5 @@
 /log/*.log
 /tmp
 /keys/social.yml
+
+config/database.yml

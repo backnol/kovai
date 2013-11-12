@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -43,6 +40,7 @@ group :development, :test do
   gem "shoulda-matchers"
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'sqlite3'
 end
 
 group :doc do
@@ -53,6 +51,11 @@ end
 group :assets do
   gem 'libv8', '~> 3.16.14.3'
   gem 'therubyracer', '~> 0.12.0'
+end
+
+group :production do
+  gem 'unicorn'
+  gem 'pg'
 end
 
 # Use ActiveModel has_secure_password

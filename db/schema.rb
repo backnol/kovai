@@ -13,16 +13,21 @@
 
 ActiveRecord::Schema.define(version: 20131022013306) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "insta", force: true do |t|
-    t.integer  "remote_id"
+    t.string   "remote_id"
     t.string   "image_url"
     t.datetime "posted_at"
     t.text     "caption"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "link"
   end
 
   create_table "tweets", force: true do |t|
-    t.integer  "remote_id"
+    t.string   "remote_id"
     t.string   "text"
     t.datetime "posted_at"
     t.datetime "created_at"
@@ -44,7 +49,7 @@ ActiveRecord::Schema.define(version: 20131022013306) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end
