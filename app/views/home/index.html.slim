@@ -1,0 +1,66 @@
+.home ng-controller="HomeController"
+  .header
+    .vert-text
+      .row
+        .col-md-10.col-md-offset-1
+          h1 Backnol Yogedran
+          p.lead I am passionate about creating well engineered beautiful solutions to make people's lives easier. I love coding and do what I can to contribute for the betterment man kind.
+      .row
+        .col-md-2.col-md-offset-1
+          .social-item
+            a ng-click="scrollTo('tweets')"
+              i.social-icon.fa.fa-twitter
+            h4 Twitter
+
+        .col-md-2
+          .social-item
+            a ng-click="scrollTo('instas')"
+              i.social-icon.fa.fa-instagram
+            h4 Instagram
+        .col-md-2
+          .social-item
+            a href="http://github.com/backnol" target="_blank"
+              i.social-icon.fa.fa-github
+            h4 Github
+        .col-md-2
+          .social-item
+            a href="http://www.linkedin.com/pub/backnol-yogendran/11/3b4/997" target="_blank"
+              i.social-icon.fa.fa-linkedin
+            h4 LinkedIn
+        .col-md-2
+          .social-item
+            a href="http://www.facebook.com/backnol" target="_blank"
+              i.social-icon.fa.fa-facebook
+            h4 facebook
+
+
+  .tweets#tweets
+    .container
+      .row
+        .col-md-4.col-md-offset-4.text-center
+          a href='http://twitter.com/backnol' target='_blank'
+            i.social-icon.fa.fa-twitter
+      .row
+        .col-md-12.text-center
+          div ng-repeat="tweet in tweets" 
+            p.lead ng-bind-html="tweet.text | linky"
+            hr
+
+
+  .instas#instas
+    .container
+      .row
+        .col-md-4.col-md-offset-4.text-center
+          a href='http://instagram.com/backnol' target='_blank'
+            i.social-icon.fa.fa-instagram
+      .row
+        .col-md-2.col-sm-4.col-xs-6.text-center ng-repeat="insta in instas"
+          a ng-href="{{insta.link}}" target="_blank"
+            img ng-src="{{insta.image_url}}" 
+
+  .callout
+    .vert-text
+      .row
+       .col-md-10.col-md-offset-1.text-center
+          h1  It is possible to commit no mistakes and still lose. That is not a weakness; that is life
+          h2 - Capt. Jean-Luc Picard -
